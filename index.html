@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masukkan Barang Penjualan</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 20px;
+    }
+
+    nav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    nav a:hover {
+        background-color: #575757;
+        color: white;
+    }
+
+    header {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    form {
+        background-color: black;
+        padding: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea,
+    input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        background-color: green;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Navigasi -->
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#">Produk</a>
+    <a href="#">Tentang Kami</a>
+    <a href="#">Kontak</a>
+</nav>
+
+<!-- Header -->
+<header>
+    <h1>ALAT CALISTENIC</h1>
+</header>
+
+<!-- Formulir -->
+<form action="" method="POST" enctype="multipart/form-data">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="kategori">Kategori Barang:</label>
+    <select id="kategori" name="kategori" required>
+        <option value="" disabled selected>Pilih Kategori</option>
+        <option value="bar pull">bar pull</option>
+        <option value="dip bar">dip bar</option>
+        <option value="barbel">barbel</option>
+        <option value="parallel bar">Parallel bar</option>
+        <option value="gymnatic rings">gymnatic rings</option>
+        <option value="dip belt">dip belt</option>
+    </select>
+
+    <label for="number">No Telepon:</label>
+    <input type="number" id="number" name="number" required>
+
+    <label for="kontak_darurat">Kontak (Darurat):</label>
+    <input type="number" id="kontak_darurat" name="kontak_darurat" required>
+
+    <label for="Alamat">Alamat:</label>
+    <textarea id="Alamat" name="Alamat" required></textarea>
+
+    <label for="Jumlah_Pesanan">Jumlah Pesanan:</label>
+    <input type="number" id="Jumlah_Pesanan" name="Jumlah_Pesanan" required>
+
+    <button type="submit" name="submit">Tambah Produk</button>
+</form>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 ALAT CALISTENIC. All rights reserved.
+</footer>
+
+</body>
+</html>
